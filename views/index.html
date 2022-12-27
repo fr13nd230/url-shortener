@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-family:'Lucida Sans Unicode',sans-serif;
+        }
+        body {
+            margin: 0px auto;
+            padding: 0px;
+        }
+        form {
+            align-items: center;
+            display: flex;
+        }
+        form > label {
+            font-weight: bolder;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        form > input[type="submit"] {
+            color: white;
+            background-color: rgb(62, 90, 201);
+            border-radius: 2%;
+        }
+        h3 {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            text-align: center;
+            text-decoration: underline;
+        }
+    </style>
+    <title>URL Shortener Service API</title>
+</head>
+<body>
+    <h3>URL Shortener Microservice</h3>
+    <form class ="form" method="POST" action="/api/shorturl">
+        <label>The url:</label> <br>
+        <input type="text" name="url" maxlength="50" placeholder="https://exemple.org" required="true">
+        <input type="submit" value="Send">   
+    </form>
+</body>
+</html>
